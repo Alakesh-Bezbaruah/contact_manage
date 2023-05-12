@@ -7,6 +7,7 @@ import InputFeild from './pages/inputFeild/InputFeild';
 import Leftbar from './components/leftbar/Leftbar';
 import { Add } from './details';
 import List from './pages/list/List';
+import Api from './pages/api/Api';
 
 
 
@@ -35,6 +36,7 @@ const App: React.FC = () => {
               <Route path='/' element={<Home/>}/>
               <Route path='contact' element={<InputFeild add={add} setAdd={setAdd} handleAdd={handleAdd}/>}/>
               <Route path='/list' element={<List adds={adds} setAdds={setAdds}/>}/>
+              <Route path='/covid' element={<Api/>}/>
             </Routes>
 
             {/* {adds.map((t)=>(
